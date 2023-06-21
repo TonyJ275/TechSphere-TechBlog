@@ -1,0 +1,73 @@
+<div class="px-4 py-3 my-3 text-center">
+    <h1 class="display-5 fw-bold">Submit Your Article</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead">Share your expertise by submitting your tech
+            article and make it reach thousands of people across the globe</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <% if (infoSubmitObj != '') { %>
+        <div class="col-9 alert alert-success text-center" role="alert">
+            <%= infoSubmitObj %>
+        </div>
+    <% } %>
+    
+    <% if (infoErrorObj != '') { %>
+        <div class="col-9 alert alert-danger text-center" role="alert">
+            <%= infoErrorObj[0].message %>
+        </div>
+    <% } %>
+    
+    
+    <div class="col-9">
+        <form action="/add-article" enctype="multipart/form-data" method="POST" class="my-form">
+
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="name" class="form-label">Title</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="category" class="form-label">Select Category</label>
+                    <select class="form-select form-control" name="category" aria-label="Category" required>
+                        <option value="" hidden>Select Category</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Laptops & Notebooks">Laptops & Notebooks</option>
+                        <option value="Smartphones & Mobile Devices">Smartphones & Mobile Devices</option>
+                        <option value="Emerging Technologies">Emerging Technologies</option>
+                    </select>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="file" class="form-control" name="image" accept="image/*" required>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="description" class="form-label">Your Article</label>
+                    <textarea name="description" id="description" class="form-control" cols="30" rows="15"
+                        required></textarea>
+                </div>
+
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="not-shared">(will not be
+                            shared)</span></label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+
+
+                <div class="col-12">
+                    <button type="submit" class="btn submit-color">Submit Article</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,218 @@
+:root {
+    --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+.container-xxl {
+    max-width: 1530px;
+}
+
+body {
+    background-image: url("/images/tech.jpg");
+    background-color: rgb(243, 243, 243);
+}
+
+.logo {
+    color: #17578A;
+    font-weight: bolder;
+}
+
+a {
+    color: var(--bs-dark);
+}
+
+/* Category Card */
+.category__link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+}
+
+.category__link:hover {
+    transform: scale(1.1);
+}
+
+.category__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.category__img--large {
+    height: 330px;
+}
+
+.category__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.my-form {
+    background-color: #f8f9fa;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-form button[type="submit"] {
+    width: 100%;
+}
+
+.article-tag {
+    color: rgb(134, 132, 132);
+}
+
+.not-shared {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.submit-color {
+    color: white;
+    background-color: #17578A;
+}
+
+.submit-color:hover {
+    color: rgb(255, 255, 255);
+    background-color: #379EBF
+}
+
+
+/* About section */
+.about-contact-div {
+    background-color: #f8f9fa;
+}
+
+.about-img {
+    height: 300px;
+}
+
+
+.about-header {
+    color: #ffffff;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.content h2 {
+    color: #343a40;
+}
+
+.feature {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    color: #343a40;
+}
+
+
+/* CSS styles for dark mode */
+
+.backg {
+
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
+
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    color: #fff;
+}
+
+.dark-mode .logo {
+    color: #379EBF;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode .btn {
+    background-color: rgb(243, 243, 243);
+    color: black
+}
+
+.dark-mode .btn:hover {
+    background-color: rgba(243, 243, 243, 0.651);
+    color: black;
+}
+
+.dark-mode .btn-outline-secondary {
+    background-color: black;
+    color: white
+}
+
+.dark-mode .submit-color {
+    color: white;
+    background-color: #17578A;
+}
+
+.dark-mode .submit-color:hover {
+    color: rgb(255, 255, 255);
+    background-color: #379EBF
+}
+
+.dark-mode .link-secondary {
+    color: rgba(243, 243, 243, 0.8) !important;
+}
+
+.dark-mode .breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.dark-mode .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode input[type="search"]:focus,
+input[type="search"]:active {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode input[type="search"] {
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dark-mode .about-contact-div{
+    color: #f8f9fa;
+    background-color: #343a40;
+}
+
+.dark-mode .contact-about-header{
+    background-color: #f8f9fa !important;
+    color: black !important;
+}
+
+.dark-mode .content h3,.dark-mode .content h2 {
+    color: #e0dcdc;
+}
+
+@media (max-width: 768px) {
+    .category__img {
+        height: 150px;
+    }
+}
+
