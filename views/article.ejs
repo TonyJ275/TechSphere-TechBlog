@@ -1,11 +1,11 @@
 <% if(article != null ) { %>
 
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb flex article-breadcrum">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
             <li class="breadcrumb-item"><a href="/categories"> Categories </a></li>
             <li class="breadcrumb-item"><a href="/categories/<%- article.category %>"><%- article.category %></a></li>
-            <li class="breadcrumb-item active" aria-current="page"><%- article.name %></li>
+            <li class="breadcrumb-item active" aria-current="page"><%- article.name.substring(0,40) %>...</li>
         </ol>
     </nav>
 

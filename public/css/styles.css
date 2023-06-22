@@ -196,17 +196,18 @@ input[type="search"]:active {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.dark-mode .about-contact-div{
+.dark-mode .about-contact-div {
     color: #f8f9fa;
     background-color: #343a40;
 }
 
-.dark-mode .contact-about-header{
+.dark-mode .contact-about-header {
     background-color: #f8f9fa !important;
     color: black !important;
 }
 
-.dark-mode .content h3,.dark-mode .content h2 {
+.dark-mode .content h3,
+.dark-mode .content h2 {
     color: #e0dcdc;
 }
 
@@ -214,5 +215,11 @@ input[type="search"]:active {
     .category__img {
         height: 150px;
     }
+
 }
 
+@media (max-width: 576px) {
+    .article-breadcrum{
+        flex-direction: column;
+    }
+}

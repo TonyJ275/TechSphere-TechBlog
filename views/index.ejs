@@ -66,8 +66,8 @@
                     <div class="category__img category__img--large shadow">
                         <img src="uploads/<%= article.image %>" alt="<%= article.name %>" loading="lazy">
                     </div>
-                    <div class="pt-1">
-                        <%= article.name %>
+                    <div class="pt-1 mb-1">
+                        <%= article.name.substring(0,40) %>...
                     </div>
                 </a>
             <% }) %>
@@ -97,7 +97,7 @@
                             <img src="uploads/<%= article.image %>" alt="<%= article.name %>" loading="lazy">
                         </div>
                         <div class="pt-1">
-                            <%= article.name %>
+                            <%= article.name.substring(0,40) %>...
                         </div>
                     </a>
                 <% }) %>
